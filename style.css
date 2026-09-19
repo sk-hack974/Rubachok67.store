@@ -54,3 +54,137 @@ nav a:hover {
     cursor: pointer;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0b0f12;
+    color: #ffffff;
+}
+
+/* Контейнер секції */
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* Заміни 'hero-bg.jpg' на шлях до твого зображення рибалки в тумані */
+    background: url('hero-bg.jpg') no-repeat center center / cover; 
+    padding: 40px 20px;
+}
+
+/* Темне накладання (оверлей) для читабельності тексту */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Налаштуй яскравість фону тут */
+    z-index: 1;
+}
+
+/* Обмежувач ширини */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+/* Контентний блок */
+.hero-content {
+    max-width: 600px; /* Обмеження ширини текстового блоку */
+}
+
+/* Зелений бейдж зверху */
+.badge {
+    display: inline-block;
+    color: #4ade80; /* Яскраво-зелений колір тексту */
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px dashed rgba(74, 222, 128, 0.4);
+    padding: 6px 12px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+}
+
+/* Головний заголовок */
+.hero-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    line-height: 0.95;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+/* Опис */
+.hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cbd5e1; /* Світло-сірий колір для м'якості */
+    margin-bottom: 36px;
+}
+
+/* Контейнер кнопок */
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Загальні стилі для кнопок */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 28px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* Головна помаранчева кнопка */
+.btn-primary {
+    background-color: #f59e0b; /* Помаранчевий колір */
+    color: #000000;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #d97706;
+}
+
+/* Друрядна прозора кнопка */
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+}
+
+/* Адаптивність для мобільних екранів */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 48px;
+    }
+    .hero-description {
+        font-size: 14px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn {
+        text-align: center;
+        width: 100%;
+    }
+}

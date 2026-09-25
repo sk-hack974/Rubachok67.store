@@ -12,47 +12,82 @@ body {
 
 
 
-header {
-    height: 70px;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.hero-section {
+    position: relative;
+    min-height: 85vh;
+    background: linear-gradient(rgba(6, 11, 17, 0.4), #060b11), 
+                url('https://unsplash.com') no-repeat center center/cover;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+
+
+.navbar {
+    display: flex;
     justify-content: space-between;
-
-    padding: 0 50px;
-
-    border-bottom: 1px solid #263044;
+    align-items: center;
+    padding: 25px 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
-    color: #f5a900;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ffffff;
 }
 
-nav {
+.nav-links {
     display: flex;
-    gap: 25px;
+    list-style: none;
+    gap: 30px;
 }
 
-nav a {
-    color: #7f8797;
-    text-decoration: none;
-    font-size: 12px;
+.nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a0a5ad;
+    transition: color 0.3s;
 }
 
-nav a:hover {
-    color: white;
+.nav-links a:hover, .nav-links a.active {
+    color: #ffffff;
 }
 
-.login {
-    background-color: #f5a900;
-    border: none;
-    padding: 10px 18px;
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
-    font-size: 10px;
-    font-weight: bold;
+.nav-actions a {
+    color: #a0a5ad;
+    font-size: 16px;
+}
 
-    cursor: pointer;
+.nav-actions a:hover {
+    color: #ffffff;
+}
+
+.btn-join {
+    background-color: #d97706;
+    color: #fff !important;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+}
+
+.btn-join:hover {
+    background-color: #b45309;
 }
 
 

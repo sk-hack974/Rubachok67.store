@@ -1,50 +1,352 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Риболовля - Про нас</title>
-
+    <title>RuBaChOk67 — Де тиша зустрічається з ударом</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 
 <body>
 
-    <!-- ШАПКА -->
-    <header>
-        <div class="logo">🎣 Rubachok67</div>
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="logo">RuBaChOk67</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Дослідити</a></li>
+                <li><a href="#">Місця</a></li>
+                <li><a href="#">Вікі спорядження</a></li>
+                <li><a href="#">Статті</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">Про нас</a></li>
+            </ul>
 
-        <nav>
-            <a href="#">Головна</a>
-            <a href="#">Спорт</a>
-            <a href="#">Магазин</a>
-            <a href="#">Статті</a>
-            <a href="#">Контакти</a>
-            <a href="#">Про нас</a>
+            <div class="nav-actions">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="profile-icon"><i class="far fa-user"></i></a>
+                <a href="#" class="btn-join">ПРИЄДНАТИСЯ</a>
+            </div>
         </nav>
 
-        <button class="login">ПРИЄДНАТИСЯ</button>
+        <div class="hero-content">
+            <span class="badge">ЕКСПЕДИЦІЯ 2026 // ОГЛЯД</span>
+            <h1>ДЕ ТИША ЗУСТРІЧАЄТЬСЯ<br>З УДАРОМ</h1>
+            <p>Досліджуйте дикі, незвідані водойми та оснащуйтеся першокласним вудилищем і спорядженням із карбону. Ласкаво просимо до Fishcraft.</p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">ДОСЛІДИТИ ДИКІ МІСЦЯ</a>
+                <a href="#" class="btn-secondary">ПЕРЕГЛЯНУТИ СПОРЯДЖЕННЯ</a>
+            </div>
+        </div>
     </header>
-  
-<section class="hero-section">
-        <div class="hero-overlay"></div>
-        
-        <div class="container">
-            <div class="hero-content">
-                <span class="badge">Експедиція Нуль // Уже відкрито</span>
-                <h1 class="hero-title">Там, де тиша зустрічає<br>клювання</h1>
-                <p class="hero-description">
-                    Досліджуйте дикі, незвідані води та озброюйтеся професійними карбоновими снастями для нахлисту. Ласкаво просимо до FishCraft.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">Дослідити дикі місця</a>
-                    <a href="#" class="btn btn-secondary">Переглянути снасті</a>
+
+    <!-- СЕКЦІЯ НАЙКРАЩИХ ДИКИХ МІСЦЬ -->
+    <section class="spots-section">
+        <div class="section-header">
+            <div>
+                <span class="sub-badge">НЕПРИБОРКАНА ПІВНІЧ</span>
+                <h2>НАЙКРАЩІ ДИКІ МІСЦЯ</h2>
+            </div>
+            <a href="#" class="view-all">Переглянути всі 150+ місць &rarr;</a>
+        </div>
+
+        <div class="spots-grid">
+
+            <!-- Картка 1 -->
+            <div class="spot-card">
+                <div class="card-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="location">ДИКА ПРИРОДА ОРЕГОНУ</span>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <h3>Розгалуження річки Блеквуд</h3>
+                    <p>Цільові види: сталеголовий лосось, кижуч</p>
+                </div>
+            </div>
+
+            <!-- Картка 2 -->
+            <div class="spot-card">
+                <div class="card-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="location">БАСЕЙН АЛЯСКИ</span>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <h3>Глибокий вигин Кенаю</h3>
+                    <p>Цільові види: королівський лосось, райдужна форель</p>
+                </div>
+            </div>
+
+            <!-- Картка 3 -->
+            <div class="spot-card">
+                <div class="card-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="location">ВИСОКОГІР'Я МОНТАНИ</span>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <h3>Озеро Лост-Лейк</h3>
+                    <p>Цільові види: струмкова форель, харіус</p>
+                </div>
+            </div>
+
+            <!-- Картка 4 -->
+            <div class="spot-card">
+                <div class="card-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="location">ДИКА ПРИРОДА ЗАХІДНОЇ ВІРДЖИНІЇ</span>
+                        <span class="rating">★★★★☆</span>
+                    </div>
+                    <h3>Ущелина Диявольський Лікоть</h3>
+                    <p>Цільові види: струмкова форель, малоротий окунь</p>
+                </div>
+            </div>
+
+            <!-- Картка 5 -->
+            <div class="spot-card">
+                <div class="card-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="location">ПІВНІЧНА КАЛІФОРНІЯ</span>
+                        <span class="rating">★★★★☆</span>
+                    </div>
+                    <h3>Лісовий струмок Сіскію</h3>
+                    <p>Цільові види: чавича, дика бура форель</p>
+                </div>
+            </div>
+
+            <!-- Картка 6 -->
+            <div class="spot-card">
+                <div class="card-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="location">ХРЕБЕТ ЮТА</span>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <h3>Високогірний басейн Уїнта</h3>
+                    <p>Цільові види: тигрова форель, тигрова щука</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- СЕКЦІЯ ОСНОВНОГО СПОРЯДЖЕННЯ -->
+    <section class="gear-section">
+        <div class="section-header">
+            <div>
+                <span class="sub-badge green-badge">СТВОРЕНО ДЛЯ ТОЧНОСТІ</span>
+                <h2>НЕОБХІДНЕ СПОРЯДЖЕННЯ РИБАЛОВА</h2>
+            </div>
+        </div>
+
+        <div class="gear-grid">
+
+            <!-- Товар 1 -->
+            <div class="gear-card">
+                <div class="gear-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="gear-info">
+                    <span class="gear-cat">ВУДИЛИЩА</span>
+                    <h4>Apex Carbon — нахлистове вудилище</h4>
+                    <div class="gear-footer">
+                        <span class="price">$649</span>
+                        <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="gear-card">
+                <div class="gear-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="gear-info">
+                    <span class="gear-cat">КОТУШКИ</span>
+                    <h4>Stealth-Spool CNC — котушка</h4>
+                    <div class="gear-footer">
+                        <span class="price">$329</span>
+                        <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Товар 3 -->
+            <div class="gear-card">
+                <div class="gear-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="gear-info">
+                    <span class="gear-cat">ОДЯГ</span>
+                    <h4>Canyon Dry-Trek — вейдерси</h4>
+                    <div class="gear-footer">
+                        <span class="price">$450</span>
+                        <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Товар 4 -->
+            <div class="gear-card">
+                <div class="gear-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="gear-info">
+                    <span class="gear-cat">ПРИМАНКИ</span>
+                    <h4>Streamline Brass — набір приманок</h4>
+                    <div class="gear-footer">
+                        <span class="price">$45</span>
+                        <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- СЕКЦІЯ БЛОГУ -->
+    <section class="blog-section">
+        <div class="section-header">
+            <div>
+                <span class="sub-badge">ЩОДЕННИК ЕКСПЕДИЦІЇ</span>
+                <h2>ПОЛЬОВІ НОТАТКИ ТА ТАКТИКА</h2>
+                <p class="section-desc">Професійні поради від досвідчених гідів щодо сезонних міграцій риби в річках.</p>
+            </div>
+        </div>
+
+        <div class="blog-grid">
+
+            <!-- Стаття 1 -->
+            <div class="blog-card">
+                <div class="blog-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>12 жовтня 2026</span>
+                        <span class="dot">•</span>
+                        <span>5 хв читання</span>
+                    </div>
+                    <h3>Як розпізнати осінній виліт ручайника</h3>
+                    <a href="#" class="read-link">ПЕРЕГЛЯНУТИ СТАТТЮ &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Стаття 2 -->
+            <div class="blog-card">
+                <div class="blog-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>28 вересня 2026</span>
+                        <span class="dot">•</span>
+                        <span>8 хв читання</span>
+                    </div>
+                    <h3>Стратегії німфінгу на великій висоті</h3>
+                    <a href="#" class="read-link">ПЕРЕГЛЯНУТИ СТАТТЮ &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Стаття 3 -->
+            <div class="blog-card">
+                <div class="blog-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>15 вересня 2026</span>
+                        <span class="dot">•</span>
+                        <span>6 хв читання</span>
+                    </div>
+                    <h3>Збір речей для дикої природи: легке спорядження</h3>
+                    <a href="#" class="read-link">ПЕРЕГЛЯНУТИ СТАТТЮ &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- СЕКЦІЯ ВІДГУКУ -->
+    <section class="testimonial-section">
+        <div class="testimonial-container">
+            <blockquote class="testimonial-text">
+                "ВУДИЛИЩЕ APEX CARBON — ЦЕ СПРАВЖНІЙ ТВІР МИСТЕЦТВА. ВИКОНУВАТИ ТОЧНІ ЗАМАХИ ПІД СИЛЬНИМ ВІТРОМ В УЩЕЛИНІ БУЛО НАДЗВИЧАЙНО ЛЕГКО."
+            </blockquote>
+
+            <div class="testimonial-author">
+                <img src="https://unsplash.com" alt="Капітан Маркус Венс" class="author-avatar">
+
+                <div class="author-info">
+                    <span class="author-name">Капітан Маркус Венс</span>
+                    <span class="author-title">Гід експедицій на річці Колумбія</span>
                 </div>
             </div>
         </div>
-  
     </section>
-     
+
+    <!-- СЕКЦІЯ ПІДПИСКИ -->
+    <section class="subscribe-section">
+        <div class="subscribe-container">
+            <div class="subscribe-text">
+                <h2>ПІДПИШІТЬСЯ НА FLY SHEET</h2>
+                <p>Щотижневі оновлення про виліт комах, сезонні новинки спорядження та доступ до секретних координат. Жодного спаму — лише координати.</p>
+            </div>
+
+            <form class="subscribe-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Введіть свою електронну пошту..." required>
+                <button type="submit">ПІДПИСАТИСЯ</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ПІДВАЛ САЙТУ -->
+    <footer class="main-footer">
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <div class="footer-logo">RuBaChOk67</div>
+                <p>Преміальне спорядження, найкращі місця та дика природа для справжніх рибалок. У пошуках тиші, полюванні на трофеї та з повагою до водойм.</p>
+            </div>
+
+            <div class="footer-links-group">
+
+                <div class="footer-column">
+                    <h4>ДОСЛІДИТИ</h4>
+                    <ul>
+                        <li><a href="#">Дикі місця</a></li>
+                        <li><a href="#">Сезонні карти</a></li>
+                        <li><a href="#">Історії учасників</a></li>
+                        <li><a href="#">Охорона природи</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>ПРОФЕСІЙНИЙ МАГАЗИН</h4>
+                    <ul>
+                        <li><a href="#">Нахлистові вудилища</a></li>
+                        <li><a href="#">Професійні котушки</a></li>
+                        <li><a href="#">Карбонове спорядження</a></li>
+                        <li><a href="#">Одяг Gentry</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>РЕСУРСИ</h4>
+                    <ul>
+                        <li><a href="#">Календарі вильоту комах</a></li>
+                        <li><a href="#">Таблиці рівня води</a></li>
+                        <li><a href="#">Посібники зі спорядження</a></li>
+                        <li><a href="#">Служба підтримки</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 RuBaChOk67 Expeditionary Group. Усі права захищені.</p>
+
+            <div class="footer-socials">
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Політика конфіденційності</a>
+                <a href="#">Умови використання</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
-  

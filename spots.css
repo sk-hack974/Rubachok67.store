@@ -1,0 +1,327 @@
+/* Основні налаштування */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f1f3fa;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+/* Вся сторінка */
+
+.page {
+    width: 900px;
+    margin: 40px auto;
+    background-color: #020914;
+}
+
+
+/* Верхнє меню */
+
+header {
+    height: 55px;
+    background-color: #02060d;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 13px;
+    font-weight: bold;
+    width: 180px;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+nav .active {
+    color: #00aaff;
+}
+
+.login {
+    margin-left: auto;
+
+    background-color: #f5b400;
+    border: none;
+
+    padding: 7px 14px;
+
+    font-size: 8px;
+    font-weight: bold;
+}
+
+
+/* Головний зелений блок */
+
+.hero {
+    background-color: #00382e;
+
+    padding: 35px 35px 30px;
+}
+
+.small-text {
+    color: #00a987;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    margin: 10px 0;
+
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    color: #9bb5b1;
+    font-size: 11px;
+}
+
+
+/* Кнопки */
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.buttons button {
+    background-color: #082c35;
+    color: white;
+
+    border: 1px solid #145461;
+
+    padding: 7px 12px;
+
+    font-size: 8px;
+}
+
+
+/* Основний блок */
+
+main {
+    display: flex;
+    gap: 20px;
+
+    padding: 35px;
+}
+
+
+/* Сітка карток */
+
+.spots {
+    width: 570px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+/* Одна картка */
+
+.card {
+    background-color: #07152a;
+
+    border: 1px solid #112642;
+
+    height: 135px;
+}
+
+.photo {
+    height: 80px;
+
+    background-image: url("screenshot.png");
+    background-repeat: no-repeat;
+
+    background-size: 477px 595px;
+}
+
+
+/*
+    Картинки вирізаються
+    зі скріншота.
+*/
+
+.photo1 {
+    background-position: -68px -201px;
+}
+
+.photo2 {
+    background-position: -147px -201px;
+}
+
+.photo3 {
+    background-position: -228px -201px;
+}
+
+.photo4 {
+    background-position: -68px -280px;
+}
+
+.photo5 {
+    background-position: -147px -280px;
+}
+
+.photo6 {
+    background-position: -228px -280px;
+}
+
+.photo7 {
+    background-position: -68px -360px;
+}
+
+.photo8 {
+    background-position: -147px -360px;
+}
+
+.photo9 {
+    background-position: -228px -360px;
+}
+
+
+/* Текст карток */
+
+.card h3 {
+    font-size: 11px;
+    margin: 7px 8px 2px;
+}
+
+.card p {
+    color: #6d7b8d;
+    font-size: 8px;
+
+    margin: 0 8px;
+}
+
+
+/* Права колонка */
+
+aside {
+    width: 230px;
+}
+
+
+/* Карта */
+
+.map {
+    background-color: #061426;
+
+    border: 1px solid #0c3040;
+
+    padding: 12px;
+}
+
+.map h2,
+.recommendations h2 {
+    color: #00aaff;
+
+    font-size: 10px;
+
+    margin-top: 0;
+}
+
+.map-picture {
+    height: 110px;
+
+    background-image: url("screenshot.png");
+
+    background-size: 477px 595px;
+
+    background-position: -315px -198px;
+}
+
+.map p {
+    color: #687789;
+    font-size: 8px;
+}
+
+
+/* Рекомендації */
+
+.recommendations {
+    margin-top: 15px;
+
+    background-color: #00463b;
+
+    padding: 15px;
+
+    border: 1px solid #008d78;
+}
+
+.recommendations h2 {
+    color: white;
+}
+
+.recommendations p {
+    color: #64d0b9;
+    font-size: 9px;
+}
+
+
+/* Footer */
+
+footer {
+    border-top: 1px solid #17202d;
+
+    padding: 30px 35px;
+
+    min-height: 170px;
+
+    color: #687789;
+}
+
+.footer-logo {
+    color: white;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer > p {
+    width: 300px;
+    font-size: 9px;
+    line-height: 15px;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 60px;
+
+    margin-top: -50px;
+}
+
+.footer-links h3 {
+    color: #e4a900;
+    font-size: 9px;
+}
+
+.footer-links p {
+    font-size: 8px;
+    margin: 7px 0;
+}

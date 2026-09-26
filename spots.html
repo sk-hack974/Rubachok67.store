@@ -3,196 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Fishing Spots</title>
 
-    <link rel="stylesheet" href="spots.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="page">
+    <!-- Верхнє меню -->
+    <header class="header">
+        <div class="logo"> Rubachok67</div>
 
-
-            <header class="hero-section">
-        <nav class="navbar">
-            <div class="logo">RuBaChOk67</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Дослідити</a></li>
-                <li><a href="spots.html">Місця</a></li>
-                <li><a href="#">Вікі спорядження</a></li>
-                <li><a href="#">Статті</a></li>
-                <li><a href="#">Галерея</a></li>
-                <li><a href="about.html">Про нас</a></li>
-            </ul>
-
-            <div class="nav-actions">
-                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
-                <a href="#" class="profile-icon"><i class="far fa-user"></i></a>
-                <a href="#" class="btn-join">ПРИЄДНАТИСЯ</a>
-            </div>
+        <nav>
+            <a href="#">Головна</a>
+            <a href="#">Місця</a>
+            <a href="#">Річки</a>
+            <a href="#">Галерея</a>
+            <a href="#">Про нас</a>
         </nav>
 
-        </header>
+        <button class="login">Увійти</button>
+    </header>
 
 
-        <!-- Головний блок -->
-        <section class="hero">
+    <!-- Головний блок -->
+    <section class="hero">
 
-            <p class="small-text">DISCOVER FISHING SPOTS</p>
+        <p class="small-text">НЕЗАБУТНІ ПРИГОДИ</p>
 
-            <h1>EXPLORE WILD SPECIES HABITATS</h1>
+        <h1>ДОСЛІДЖУЙТЕ ДИКІ МІСЦЯ</h1>
 
-            <p>
-                Discover amazing fishing locations, beautiful lakes,
-                rivers and wild places around the world.
-            </p>
+        <p>
+            Знаходьте найкращі місця для риболовлі,
+            досліджуйте природу та плануйте свої наступні пригоди.
+        </p>
 
-            <div class="buttons">
-                <button>All Regions</button>
-                <button>Popular Spots</button>
-                <button>Freshwater</button>
-                <button>Saltwater</button>
+        <div class="buttons">
+            <button>Усі місця</button>
+            <button>Популярні</button>
+            <button>Гірські озера</button>
+            <button>Річки</button>
+        </div>
+
+    </section>
+
+
+    <!-- Основний контент -->
+    <main class="content">
+
+        <!-- Ліва частина -->
+        <section class="spots">
+
+            <h2>Популярні місця</h2>
+
+            <div class="cards">
+
+                <!-- Картка 1 -->
+                <article class="card">
+
+                    <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=500&q=80">
+
+                    <div class="card-info">
+
+                        <span class="tag">РІЧКА</span>
+
+                        <h3>Гірська річка</h3>
+
+                        <p>Карпати, Україна</p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Картка 2 -->
+                <article class="card">
+
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&q=80">
+
+                    <div class="card-info">
+
+                        <span class="tag">ОЗЕРО</span>
+
+                        <h3>Блакитне озеро</h3>
+
+                        <p>Карпати, Україна</p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Картка 3 -->
+                <article class="card">
+
+                    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=500&q=80">
+
+                    <div class="card-info">
+
+                        <span class="tag">РІЧКА</span>
+
+                        <h3>Лісова річка</h3>
+
+                        <p>Закарпаття</p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Картка 4 -->
+                <article class="card">
+
+                    <img src="https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=500&q=80">
+
+                    <div class="card-info">
+
+                        <span class="tag">ПАРК</span>
+
+                        <h3>Національний парк</h3>
+
+                        <p>Україна</p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Картка 5 -->
+                <article class="card">
+
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=500&q=80">
+
+                    <div class="card-info">
+
+                        <span class="tag">ОЗЕРО</span>
+
+                        <h3>Лісове озеро</h3>
+
+                        <p>Волинь</p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Картка 6 -->
+                <article class="card">
+
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=500&q=80">
+
+                    <div class="card-info">
+
+                        <span class="tag">ОЗЕРО</span>
+
+                        <h3>Гірське озеро</h3>
+
+                        <p>Карпати</p>
+
+                    </div>
+
+                </article>
+
             </div>
 
         </section>
 
 
-        <!-- Основний контент -->
-        <main>
+        <!-- Права частина -->
+        <aside class="sidebar">
 
-            <!-- Картки -->
-            <div class="spots">
+            <div class="map">
 
-                <div class="card">
-                    <div class="photo photo1"></div>
-                    <h3>River Bend</h3>
-                    <p>Forest • River</p>
-                </div>
+                <h2>Мапа місць</h2>
 
-                <div class="card">
-                    <div class="photo photo2"></div>
-                    <h3>Ice Lake Pool</h3>
-                    <p>Mountain • Lake</p>
-                </div>
-
-                <div class="card">
-                    <div class="photo photo3"></div>
-                    <h3>Lost Canyon</h3>
-                    <p>Canyon • River</p>
-                </div>
-
-                <div class="card">
-                    <div class="photo photo4"></div>
-                    <h3>Indian Park</h3>
-                    <p>Forest • Lake</p>
-                </div>
-
-                <div class="card">
-                    <div class="photo photo5"></div>
-                    <h3>Hidden Waters</h3>
-                    <p>River • Forest</p>
-                </div>
-
-                <div class="card">
-                    <div class="photo photo6"></div>
-                    <h3>Alpine Lake</h3>
-                    <p>Mountain • Lake</p>
-                </div>
-
-                <div class="card">
-                    <div class="photo photo7"></div>
-                    <h3>Big Fall Pool</h3>
-                    <p>River • Forest</p>
-                </div>
-
-                <div class="card">
-                    <div class="photo photo8"></div>
-                    <h3>River Falls</h3>
-                    <p>River • Waterfall</p>
-                </div>
-
-                <div class="card">
-                    <div class="photo photo9"></div>
-                    <h3>Estuary Lake</h3>
-                    <p>Lake • Coast</p>
+                <div class="fake-map">
+                    🗺️
+                    <p>КАРТА РИБАЛЬСЬКИХ МІСЦЬ</p>
                 </div>
 
             </div>
 
 
-            <!-- Права колонка -->
-            <aside>
+            <div class="recommendations">
 
-                <div class="map">
+                <h2>Рекомендації</h2>
 
-                    <h2>REAL-TIME WATER MAP</h2>
+                <p>
+                    🎣 Найкращий час для риболовлі —
+                    ранок та вечір.
+                </p>
 
-                    <div class="map-picture"></div>
+                <p>
+                    🌲 Не залишайте сміття після відпочинку.
+                </p>
 
-                    <p>
-                        Explore fishing areas and discover
-                        new locations near you.
-                    </p>
+                <p>
+                    💧 Перевіряйте рівень води перед поїздкою.
+                </p>
 
-                </div>
-
-
-                <div class="recommendations">
-
-                    <h2>FISH RECOMMENDATIONS</h2>
-
-                    <p>Rainbow Trout</p>
-                    <p>Brown Trout</p>
-                    <p>Smallmouth Bass</p>
-                    <p>Northern Pike</p>
-
-                </div>
-
-            </aside>
-
-        </main>
-
-
-        <!-- Нижня частина -->
-        <footer>
-
-            <div class="footer-logo">
-                RuBaChOk67
             </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- Нижня частина -->
+    <footer>
+
+        <div class="footer-logo">
+            🎣 FISHCRAFT
 
             <p>
-                The perfect website for discovering
-                beautiful fishing locations.
+                Досліджуйте природу та знаходьте
+                нові місця для риболовлі.
             </p>
+        </div>
 
-            <div class="footer-links">
+        <div>
+            <h3>Навігація</h3>
+            <a href="#">Головна</a>
+            <a href="#">Місця</a>
+            <a href="#">Річки</a>
+        </div>
 
-                <div>
-                    <h3>EXPLORE</h3>
-                    <p>Fishing Spots</p>
-                    <p>Reviews</p>
-                    <p>Maps</p>
-                </div>
+        <div>
+            <h3>Інформація</h3>
+            <a href="#">Про нас</a>
+            <a href="#">Контакти</a>
+            <a href="#">Допомога</a>
+        </div>
 
-                <div>
-                    <h3>PRO SHOP</h3>
-                    <p>Fishing Gear</p>
-                    <p>Equipment</p>
-                    <p>Accessories</p>
-                </div>
-
-                <div>
-                    <h3>RESOURCES</h3>
-                    <p>Fishing Guides</p>
-                    <p>Tips</p>
-                    <p>Contact</p>
-                </div>
-
-            </div>
-
-        </footer>
-
-    </div>
+    </footer>
 
 </body>
 </html>

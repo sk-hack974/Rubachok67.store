@@ -1,327 +1,400 @@
-/* Основні налаштування */
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background-color: #f1f3fa;
+
     font-family: Arial, sans-serif;
+
+    background-color: #020814;
     color: white;
 }
 
 
-/* Вся сторінка */
+/* =========================
+   ВЕРХНЄ МЕНЮ
+========================= */
 
-.page {
-    width: 900px;
-    margin: 40px auto;
-    background-color: #020914;
-}
-
-
-/* Верхнє меню */
-
-header {
-    height: 55px;
-    background-color: #02060d;
+.header {
+    height: 60px;
 
     display: flex;
     align-items: center;
 
-    padding: 0 30px;
+    padding: 0 40px;
+
+    background-color: #020914;
+
+    border-bottom: 1px solid #17212c;
 }
 
 .logo {
-    font-size: 13px;
+    color: white;
     font-weight: bold;
-    width: 180px;
+
+    margin-right: 50px;
 }
 
 nav {
     display: flex;
-    gap: 22px;
+    gap: 25px;
 }
 
 nav a {
-    color: #aaa;
+    color: #9da8b3;
     text-decoration: none;
-    font-size: 10px;
+
+    font-size: 14px;
 }
 
 nav a:hover {
-    color: #00aaff;
-}
-
-nav .active {
-    color: #00aaff;
+    color: #ffffff;
 }
 
 .login {
     margin-left: auto;
 
-    background-color: #f5b400;
+    background-color: #f5b51b;
+    color: #111;
+
     border: none;
+    padding: 9px 18px;
 
-    padding: 7px 14px;
+    border-radius: 4px;
 
-    font-size: 8px;
-    font-weight: bold;
+    cursor: pointer;
 }
 
 
-/* Головний зелений блок */
+/* =========================
+   ГОЛОВНИЙ БЛОК
+========================= */
 
 .hero {
-    background-color: #00382e;
+    padding: 55px 50px;
 
-    padding: 35px 35px 30px;
+    background-color: #00382f;
 }
 
 .small-text {
-    color: #00a987;
-    font-size: 9px;
+    color: #f5b51b;
+
+    font-size: 11px;
     font-weight: bold;
 }
 
 .hero h1 {
     margin: 10px 0;
 
-    font-size: 27px;
-    letter-spacing: 1px;
+    font-size: 36px;
 }
 
 .hero p {
-    color: #9bb5b1;
-    font-size: 11px;
+    color: #a8c1ba;
+
+    max-width: 600px;
+
+    line-height: 1.6;
 }
 
-
-/* Кнопки */
-
 .buttons {
+    margin-top: 25px;
+
     display: flex;
-    gap: 8px;
-    margin-top: 15px;
+    gap: 10px;
 }
 
 .buttons button {
-    background-color: #082c35;
+    padding: 9px 15px;
+
+    border: 1px solid #486b64;
+
+    background-color: transparent;
     color: white;
 
-    border: 1px solid #145461;
+    border-radius: 4px;
 
-    padding: 7px 12px;
+    cursor: pointer;
+}
 
-    font-size: 8px;
+.buttons button:first-child {
+    background-color: #f5b51b;
+    color: black;
 }
 
 
-/* Основний блок */
+/* =========================
+   ОСНОВНИЙ КОНТЕНТ
+========================= */
 
-main {
+.content {
     display: flex;
-    gap: 20px;
 
-    padding: 35px;
+    gap: 25px;
+
+    padding: 35px 40px;
 }
 
 
-/* Сітка карток */
+/* Ліва частина */
 
 .spots {
-    width: 570px;
+    width: 70%;
+}
 
+.spots h2 {
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Картки */
+
+.cards {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 12px;
+    gap: 15px;
 }
-
-
-/* Одна картка */
 
 .card {
-    background-color: #07152a;
+    background-color: #071222;
 
-    border: 1px solid #112642;
+    border: 1px solid #172536;
 
-    height: 135px;
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    transition: 0.2s;
 }
 
-.photo {
-    height: 80px;
+.card:hover {
+    transform: translateY(-3px);
 
-    background-image: url("screenshot.png");
-    background-repeat: no-repeat;
-
-    background-size: 477px 595px;
+    border-color: #2d6a5c;
 }
 
+.card img {
+    width: 100%;
+    height: 120px;
 
-/*
-    Картинки вирізаються
-    зі скріншота.
-*/
-
-.photo1 {
-    background-position: -68px -201px;
+    object-fit: cover;
 }
 
-.photo2 {
-    background-position: -147px -201px;
-}
-
-.photo3 {
-    background-position: -228px -201px;
-}
-
-.photo4 {
-    background-position: -68px -280px;
-}
-
-.photo5 {
-    background-position: -147px -280px;
-}
-
-.photo6 {
-    background-position: -228px -280px;
-}
-
-.photo7 {
-    background-position: -68px -360px;
-}
-
-.photo8 {
-    background-position: -147px -360px;
-}
-
-.photo9 {
-    background-position: -228px -360px;
-}
-
-
-/* Текст карток */
-
-.card h3 {
-    font-size: 11px;
-    margin: 7px 8px 2px;
-}
-
-.card p {
-    color: #6d7b8d;
-    font-size: 8px;
-
-    margin: 0 8px;
-}
-
-
-/* Права колонка */
-
-aside {
-    width: 230px;
-}
-
-
-/* Карта */
-
-.map {
-    background-color: #061426;
-
-    border: 1px solid #0c3040;
-
+.card-info {
     padding: 12px;
 }
 
-.map h2,
-.recommendations h2 {
-    color: #00aaff;
+.tag {
+    display: inline-block;
 
-    font-size: 10px;
+    color: #6ed3ad;
+
+    font-size: 9px;
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    margin: 5px 0;
+
+    font-size: 15px;
+}
+
+.card p {
+    margin: 0;
+
+    color: #8793a0;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   БОКОВА ПАНЕЛЬ
+========================= */
+
+.sidebar {
+    width: 30%;
+}
+
+.map,
+.recommendations {
+    background-color: #071222;
+
+    border: 1px solid #172536;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    font-size: 14px;
 
     margin-top: 0;
 }
 
-.map-picture {
-    height: 110px;
 
-    background-image: url("screenshot.png");
+/* Несправжня карта */
 
-    background-size: 477px 595px;
+.fake-map {
+    height: 190px;
 
-    background-position: -315px -198px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0b1c32;
+
+    color: #4a9ed1;
+
+    text-align: center;
 }
 
-.map p {
-    color: #687789;
-    font-size: 8px;
+.fake-map p {
+    font-size: 10px;
+
+    color: #6d8da4;
 }
 
 
 /* Рекомендації */
 
 .recommendations {
-    margin-top: 15px;
-
-    background-color: #00463b;
-
-    padding: 15px;
-
-    border: 1px solid #008d78;
-}
-
-.recommendations h2 {
-    color: white;
+    background-color: #00382f;
 }
 
 .recommendations p {
-    color: #64d0b9;
-    font-size: 9px;
+    color: #a8c1ba;
+
+    font-size: 11px;
+
+    line-height: 1.5;
 }
 
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    border-top: 1px solid #17202d;
+    display: flex;
 
-    padding: 30px 35px;
+    gap: 100px;
 
-    min-height: 170px;
+    padding: 40px;
 
-    color: #687789;
+    border-top: 1px solid #17212c;
+
+    color: #8793a0;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+footer h3 {
+    color: #f5b51b;
+
+    font-size: 12px;
+}
+
+footer a {
+    color: #8793a0;
+
+    text-decoration: none;
+
+    font-size: 11px;
 }
 
 .footer-logo {
+    width: 350px;
+
     color: white;
 
-    font-size: 12px;
     font-weight: bold;
 }
 
-footer > p {
-    width: 300px;
-    font-size: 9px;
-    line-height: 15px;
+.footer-logo p {
+    color: #697582;
+
+    font-weight: normal;
+
+    line-height: 1.5;
+
+    font-size: 11px;
 }
 
 
-.footer-links {
-    display: flex;
-    justify-content: flex-end;
+/* =========================
+   АДАПТАЦІЯ ДЛЯ ТЕЛЕФОНУ
+========================= */
 
-    gap: 60px;
+@media (max-width: 800px) {
 
-    margin-top: -50px;
+    .header {
+        padding: 0 15px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        flex-direction: column;
+
+        padding: 25px 15px;
+    }
+
+    .spots,
+    .sidebar {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .footer-logo {
+        width: auto;
+    }
 }
 
-.footer-links h3 {
-    color: #e4a900;
-    font-size: 9px;
-}
 
-.footer-links p {
-    font-size: 8px;
-    margin: 7px 0;
+/* Для дуже маленьких екранів */
+
+@media (max-width: 500px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+    }
 }

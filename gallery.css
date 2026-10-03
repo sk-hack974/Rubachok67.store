@@ -1,0 +1,446 @@
+/* -------------------------
+   ЗАГАЛЬНІ НАЛАШТУВАННЯ
+------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: #eeeeF5;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+}
+
+
+/* -------------------------
+   ГОЛОВНИЙ КОНТЕЙНЕР
+------------------------- */
+
+.container {
+    width: 900px;
+
+    margin: 30px auto;
+
+    background-color: #020914;
+}
+
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+header {
+    height: 55px;
+
+    padding: 0 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #17202e;
+}
+
+
+/* ЛОГО */
+
+.logo {
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+/* МЕНЮ */
+
+nav {
+    display: flex;
+
+    gap: 20px;
+}
+
+nav a {
+    color: #8a93a2;
+
+    text-decoration: none;
+
+    font-size: 9px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+/* КНОПКА */
+
+.join-button {
+    background-color: #f4b51b;
+
+    color: #111;
+
+    border: none;
+
+    padding: 7px 12px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* -------------------------
+   INTRO
+------------------------- */
+
+.intro {
+    background-color: #003d32;
+
+    text-align: center;
+
+    padding: 40px 20px 30px;
+}
+
+.intro h1 {
+    margin: 0;
+
+    font-size: 22px;
+
+    letter-spacing: 1px;
+}
+
+.intro p {
+    color: #91aaa5;
+
+    font-size: 9px;
+
+    margin: 12px 0 20px;
+}
+
+
+/* КНОПКИ */
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    background-color: #075448;
+
+    border: 1px solid #157365;
+
+    color: #d6e3df;
+
+    padding: 7px 12px;
+
+    font-size: 7px;
+
+    cursor: pointer;
+}
+
+.buttons button:first-child {
+    background-color: #f4b51b;
+
+    color: #111;
+
+    border-color: #f4b51b;
+}
+
+
+/* -------------------------
+   GALLERY
+------------------------- */
+
+.gallery {
+    padding: 25px 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+}
+
+
+/* КАРТИНКА */
+
+.photo {
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #111b29;
+}
+
+
+/* маленькі фото */
+
+.photo-small {
+    height: 180px;
+}
+
+
+/* великі фото */
+
+.photo-big {
+    height: 180px;
+}
+
+
+/* сама картинка */
+
+.photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.3s;
+}
+
+
+/* ефект при наведенні */
+
+.photo:hover img {
+    transform: scale(1.05);
+}
+
+
+/* -------------------------
+   ТЕКСТ НА КАРТИНЦІ
+------------------------- */
+
+.photo-text {
+    position: absolute;
+
+    left: 10px;
+
+    bottom: 10px;
+
+    background-color: rgba(0, 0, 0, 0.65);
+
+    padding: 7px 10px;
+
+    max-width: 85%;
+}
+
+.photo-text span {
+    color: #f4b51b;
+
+    font-size: 6px;
+
+    font-weight: bold;
+}
+
+.photo-text h2 {
+    margin: 4px 0 0;
+
+    font-size: 10px;
+
+    line-height: 1.2;
+}
+
+
+/* -------------------------
+   РОЗМІР КАРТОК
+------------------------- */
+
+/* перший ряд */
+
+.photo:nth-child(1) {
+    grid-column: span 1;
+}
+
+.photo:nth-child(2) {
+    grid-column: span 1;
+}
+
+.photo:nth-child(3) {
+    grid-column: span 1;
+}
+
+
+/* другий ряд */
+
+.photo:nth-child(4) {
+    grid-column: span 2;
+}
+
+.photo:nth-child(5) {
+    grid-column: span 1;
+}
+
+
+/* третій ряд */
+
+.photo:nth-child(6) {
+    grid-column: span 1;
+}
+
+.photo:nth-child(7) {
+    grid-column: span 1;
+}
+
+.photo:nth-child(8) {
+    grid-column: span 1;
+}
+
+
+/* четвертий ряд */
+
+.photo:nth-child(9) {
+    grid-column: span 2;
+}
+
+.photo:nth-child(10) {
+    grid-column: span 1;
+}
+
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+footer {
+    border-top: 1px solid #182332;
+
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 30px;
+}
+
+
+/* текст */
+
+.footer-about h2 {
+    font-size: 12px;
+}
+
+.footer-about p {
+    color: #717b8c;
+
+    font-size: 8px;
+
+    line-height: 1.6;
+}
+
+
+/* колонки */
+
+.footer-column h3 {
+    color: #f4b51b;
+
+    font-size: 8px;
+
+    margin-top: 0;
+}
+
+.footer-column a {
+    display: block;
+
+    color: #737d8d;
+
+    text-decoration: none;
+
+    font-size: 8px;
+
+    margin-bottom: 7px;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+
+/* -------------------------
+   COPYRIGHT
+------------------------- */
+
+.copyright {
+    border-top: 1px solid #111b28;
+
+    padding: 15px 30px;
+
+    color: #566174;
+
+    font-size: 7px;
+}
+
+
+/* -------------------------
+   ТЕЛЕФОН
+------------------------- */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 95%;
+
+        margin: 10px auto;
+    }
+
+
+    header {
+        height: auto;
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .gallery {
+        grid-template-columns: 1fr;
+
+        padding: 15px;
+    }
+
+
+    .photo:nth-child(n) {
+        grid-column: span 1;
+    }
+
+
+    .photo {
+        height: 200px;
+    }
+
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+
+        padding: 20px;
+    }
+
+}

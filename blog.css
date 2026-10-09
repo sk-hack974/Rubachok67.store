@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuBaChOk67 — Де тиша зустрічається з ударом</title>
+    <link rel="stylesheet" href="blog.css">
+     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+
+<body>
+
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="logo">RuBaChOk67</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Дослідити</a></li>
+                <li><a href="spots.html">Місця</a></li>
+                <li><a href="gear.html">Вікі спорядження</a></li>
+                <li><a href="blog.html">Статті</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="about.html">Про нас</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="profile-icon"><i class="far fa-user"></i></a>
+                <a href="#" class="btn-join">ПРИЄДНАТИСЯ</a>
+            </div>
+        </nav>
+
+ <main class="container main-content">
+        <header class="page-title-section">
+            <span class="sub-title">ПРО-ЖУРНАЛ</span>
+            <h1>РЕДАКЦІЙНІ СТАТТІ ТА ТАКТИКИ</h1>
+        </header>
+
+        <article class="featured-article">
+            <div class="featured-img-box">
+                <img src="https://placeholder.com" alt="Риболовля на Алясці">
+            </div>
+            <div class="featured-text-box">
+                <span class="featured-badge">Рекомендовано аналітиками</span>
+                <h2>МИСТЕЦТВО ПРОВЕДЕННЯ СТРІМЕРІВ НА ГІГАНТСЬКОГО ЧАВИЧУ АЛЯСКИ</h2>
+                <p>Вичерпне дослідження техніки заглиблення мушки крізь потужні льодовикові потоки. Опануйте правильні кути презентації та контроль шнура у складних умовах.</p>
+                <div class="article-author">
+                    <span>✍️ Капітан Джек Дрейк</span>
+                    <span class="read-time">⏱️ 12 хв читання</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Основна секція з сіткою статей та сайдбаром -->
+        <div class="content-layout">
+            
+            <!-- Сітка статей -->
+            <section class="articles-grid">
+                
+                <!-- Картка 1 -->
+                <article class="post-card">
+                    <img src="https://placeholder.com" alt="Комахи">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="tag tag-tactic">Аналіз тактики</span>
+                            <span class="author">М. Венце</span>
+                        </div>
+                        <h3>Навігація під час осіннього вильоту синьокрилих оливок</h3>
+                    </div>
+                </article>
+
+                <!-- Картка 2 -->
+                <article class="post-card">
+                    <img src="https://placeholder.com" alt="Вудилища">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="tag tag-gear">Лабораторія</span>
+                            <span class="author">Т. Роудс</span>
+                        </div>
+                        <h3>Карбон проти скловолокна: порівняння вудилищ для дикої природи</h3>
+                    </div>
+                </article>
+
+                <!-- Картка 3 -->
+                <article class="post-card">
+                    <img src="https://placeholder.com" alt="Екологія">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="tag tag-conservation">Екологія</span>
+                            <span class="author">А. Міллер</span>
+                        </div>
+                        <h3>Ініціативи із захисту нерестилищ у річці Сіскію</h3>
+                    </div>
+                </article>
+
+                <!-- Картка 4 -->
+                <article class="post-card">
+                    <img src="https://placeholder.com" alt="Вузли">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="tag tag-tutorial">Навчання</span>
+                            <span class="author">Д. Ванн</span>
+                        </div>
+                        <h3>Міцність вузлів під натягом: математика з'єднання підліска</h3>
+                    </div>
+                </article>
+
+                <!-- Картка 5 -->
+                <article class="post-card">
+                    <img src="https://placeholder.com" alt="Гори">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="tag tag-destination">Напрямки</span>
+                            <span class="author">Д. Дрейк</span>
+                        </div>
+                        <h3>У гонитві за диким золотом у високогір'ях хребта Юінта</h3>
+                    </div>
+                </article>
+
+                <!-- Картка 6 -->
+                <article class="post-card">
+                    <img src="https://placeholder.com" alt="Броди">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="tag tag-tactic">Польова тактика</span>
+                            <span class="author">М. Венце</span>
+                        </div>
+                        <h3>Безпека пересування по великій воді та якірне страхування</h3>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Бічна панель (Sidebar) -->
+            <aside class="sidebar">
+                
+                <!-- Блок категорій -->
+                <div class="widget">
+                    <h3>КАТЕГОРІЇ</h3>
+                    <ul class="categories-list">
+                        <li><a href="#">Карти вильоту комах <span>(18)</span></a></li>
+                        <li><a href="#">Експертні блоги <span>(32)</span></a></li>
+                        <li><a href="#">В'язання мушок <span>(14)</span></a></li>
+                        <li><a href="#">Огляди спорядження <span>(23)</span></a></li>
+                        <li><a href="#">Екологічні релізи <span>(9)</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Блок найпопулярніших статей -->
+                <div class="widget">
+                    <h3>ПОПУЛЯРНІ ЩОДЕННИКИ</h3>
+                    <ul class="popular-posts">
+                        <li>
+                            <a href="#">Гід із міграції волохокрилих у штаті Монтана</a>
+                            <span class="views">1.2k переглядів</span>
+                        </li>
+                        <li>
+                            <a href="#">Формули надійних вузлів для великої риби</a>
+                            <span class="views">942 переглядів</span>
+                        </li>
+                        <li>
+                            <a href="#">Чек-ліст для походів за мінусової температури</a>
+                            <span class="views">811 переглядів</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- Підвал сайту -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="logo">FISHCRAFT</div>
+                <p>Преміальні польові щоденники та елітна спільнота для тих, хто цінує точне закидання, міцні вузли та повагу до диких екосистем.</p>
+            </div>
+            <div>
+                <h4>ДОСЛІДЖУЙТЕ</h4>
+                <ul>
+                    <li><a href="#">Дикі місця</a></li>
+                    <li><a href="#">Сезонні вильоти</a></li>
+                    <li><a href="#">Кабінет рибалки</a></li>
+                    <li><a href="#">Екологія річок</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>ПРО-МАГАЗИН</h4>
+                <ul>
+                    <li><a href="#">Нахлистові вудки</a></li>
+                    <li><a href="#">Преміум котушки</a></li>
+                    <li><a href="#">Вейдерси та одяг</a></li>
+                    <li><a href="#">Екіпірування</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>РЕСУРСИ</h4>
+                <ul>
+                    <li><a href="#">Таблиці комах</a></li>
+                    <li><a href="#">Гід по вузлах</a></li>
+                    <li><a href="#">Польові нотатки</a></li>
+                    <li><a href="#">Служба підтримки</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-row">
+            <div class="footer-copy">
+                <p>&copy; 2026 Fishcraft Evolutionary Group. Всі права захищені.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Польові звіти</a>
+                <a href="#">Приватність</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

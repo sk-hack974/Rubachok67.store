@@ -3,233 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Expedition Archive</title>
-    <link rel="stylesheet" href="gallery.css">
-     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="https://cloudflare.com">
-</head>
 
+    <title>Fishcraft - Gallery</title>
+
+    <!-- З'єднуємо HTML з CSS -->
+    <link rel="stylesheet" href="gallery.css">
+</head>
 <body>
 
-    <header class="hero-section">
-        <nav class="navbar">
-            <div class="logo">RuBaChOk67</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Дослідити</a></li>
-                <li><a href="spots.html">Місця</a></li>
-                <li><a href="gear.html">Вікі спорядження</a></li>
-                <li><a href="blog.html">Статті</a></li>
-                <li><a href="gallery.html">Галерея</a></li>
-                <li><a href="about.html">Про нас</a></li>
-            </ul>
+    <!-- Верхнє меню -->
+    <header class="header">
+        <a href="#" class="logo">🎣 FISHCRAFT</a>
 
-            <div class="nav-actions">
-                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
-                <a href="#" class="profile-icon"><i class="far fa-user"></i></a>
-                <a href="#" class="btn-join">ПРИЄДНАТИСЯ</a>
-            </div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Sports</a>
+            <a href="#">Gear</a>
+            <a href="#">Stories</a>
+            <a href="#" class="active">Gallery</a>
+            <a href="#">About</a>
         </nav>
 
+        <a href="#" class="join-button">JOIN CLUB</a>
+    </header>
 
-        <!-- INTRO -->
-        <section class="intro">
+    <!-- Заголовок сторінки -->
+    <section class="hero">
+        <p class="subtitle">THE COMMUNITY PRESENTS</p>
 
-            <h1>COMMUNITY EXPEDITION ARCHIVE</h1>
+        <h1>COMMUNITY EXPEDITION ARCHIVE</h1>
+
+        <p class="description">
+            Discover adventures, fishing stories and beautiful places
+            shared by our community.
+        </p>
+
+        <div class="categories">
+            <a href="#" class="selected">Show All Photos</a>
+            <a href="#">Trophy Catches</a>
+            <a href="#">Wild Landscapes</a>
+            <a href="#">Campfire Stories</a>
+            <a href="#">Fishing Toolkit</a>
+        </div>
+    </section>
+
+    <!-- Галерея фотографій -->
+    <main class="gallery">
+
+        <article class="photo-card">
+            <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=800&q=80" alt="Риболовля на річці">
+            <div class="photo-info">
+                <span>FISHING ADVENTURE</span>
+                <h2>River Rush Falls</h2>
+            </div>
+        </article>
+
+        <article class="photo-card">
+            <img src="https://images.unsplash.com/photo-1510130382016787-a5337c3f7b78?auto=format&fit=crop&w=800&q=80" alt="Риба у воді">
+            <div class="photo-info">
+                <span>TROPHY CATCHES</span>
+                <h2>Beautiful River Trout</h2>
+            </div>
+        </article>
+
+        <article class="photo-card">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Гірський пейзаж">
+            <div class="photo-info">
+                <span>WILD LANDSCAPES</span>
+                <h2>Alpine Mountain Twilight</h2>
+            </div>
+        </article>
+
+        <article class="photo-card wide">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80" alt="Лісова річка">
+            <div class="photo-info">
+                <span>EXPLORATION</span>
+                <h2>Exploring Hidden Forests</h2>
+            </div>
+        </article>
+
+        <article class="photo-card wide">
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=80" alt="Дика природа">
+            <div class="photo-info">
+                <span>OUTDOOR GEAR</span>
+                <h2>Adventure Essentials</h2>
+            </div>
+        </article>
+
+        <article class="photo-card">
+            <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=80" alt="Зелений ліс">
+            <div class="photo-info">
+                <span>FOREST EXPLORATION</span>
+                <h2>Into the Wild</h2>
+            </div>
+        </article>
+
+        <article class="photo-card">
+            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80" alt="Вода та каміння">
+            <div class="photo-info">
+                <span>RIVER STORIES</span>
+                <h2>Water Over Stones</h2>
+            </div>
+        </article>
+
+        <article class="photo-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Захід сонця">
+            <div class="photo-info">
+                <span>SCENIC ROUTES</span>
+                <h2>Sunset Over Hills</h2>
+            </div>
+        </article>
+
+        <article class="photo-card">
+            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=80" alt="Природа та дерева">
+            <div class="photo-info">
+                <span>FIELD NOTES</span>
+                <h2>Exploring Outdoors</h2>
+            </div>
+        </article>
+
+        <article class="photo-card wide">
+            <img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1200&q=80" alt="Засніжені гори">
+            <div class="photo-info">
+                <span>LANDSCAPE PHOTOGRAPHY</span>
+                <h2>Perfect Mountain Morning</h2>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Нижня частина сторінки -->
+    <footer class="footer">
+
+        <div class="footer-about">
+            <a href="#" class="logo">🎣 FISHCRAFT</a>
 
             <p>
-                Explore adventures, stories and photography
-                from people around the world.
+                Discover new adventures and explore the beauty
+                of nature with our outdoor community.
             </p>
-
-            <div class="buttons">
-
-                <button>VIEW ALL PHOTOS</button>
-
-                <button>PEOPLE &amp; STORIES</button>
-
-                <button>NATURE &amp; LANDSCAPE</button>
-
-                <button>ADVENTURE</button>
-
-                <button>TRAVEL &amp; CAMP</button>
-
-            </div>
-
-        </section>
-
-
-        <!-- GALLERY -->
-        <section class="gallery">
-
-
-            <!-- 1 -->
-            <div class="photo photo-small">
-                <img src="images/photo1.jpg" alt="Mountain adventure">
-
-                <div class="photo-text">
-                    <span>ADVENTURE</span>
-                    <h2>Into the Wild Path</h2>
-                </div>
-            </div>
-
-
-            <!-- 2 -->
-            <div class="photo photo-small">
-                <img src="images/photo2.jpg" alt="Fishing">
-
-                <div class="photo-text">
-                    <span>ADVENTURE</span>
-                    <h2>Weekend Fishing Adventure</h2>
-                </div>
-            </div>
-
-
-            <!-- 3 -->
-            <div class="photo photo-small">
-                <img src="images/photo3.jpg" alt="Mountain">
-
-                <div class="photo-text">
-                    <span>LANDSCAPE</span>
-                    <h2>Alpine Landscape Study</h2>
-                </div>
-            </div>
-
-
-            <!-- 4 -->
-            <div class="photo photo-big">
-                <img src="images/photo4.jpg" alt="Forest river">
-
-                <div class="photo-text">
-                    <span>NATURE</span>
-                    <h2>Exploring Rapids in Deep Wild</h2>
-                </div>
-            </div>
-
-
-            <!-- 5 -->
-            <div class="photo photo-big">
-                <img src="images/photo5.jpg" alt="Camping equipment">
-
-                <div class="photo-text">
-                    <span>GEAR</span>
-                    <h2>Backcountry Guide &amp; Checklist</h2>
-                </div>
-            </div>
-
-
-            <!-- 6 -->
-            <div class="photo photo-small">
-                <img src="images/photo6.jpg" alt="Forest">
-
-                <div class="photo-text">
-                    <span>LANDSCAPE</span>
-                    <h2>Old Forest Walk</h2>
-                </div>
-            </div>
-
-
-            <!-- 7 -->
-            <div class="photo photo-small">
-                <img src="images/photo7.jpg" alt="River">
-
-                <div class="photo-text">
-                    <span>ADVENTURE</span>
-                    <h2>Wild Water Path</h2>
-                </div>
-            </div>
-
-
-            <!-- 8 -->
-            <div class="photo photo-small">
-                <img src="images/photo8.jpg" alt="Mountain lake">
-
-                <div class="photo-text">
-                    <span>TRAVEL</span>
-                    <h2>Summer Camp &amp; Trail</h2>
-                </div>
-            </div>
-
-
-            <!-- 9 -->
-            <div class="photo photo-big">
-                <img src="images/photo9.jpg" alt="Woodworking">
-
-                <div class="photo-text">
-                    <span>WORKSHOP</span>
-                    <h2>Handmade Gear Workshop</h2>
-                </div>
-            </div>
-
-
-            <!-- 10 -->
-            <div class="photo photo-big">
-                <img src="images/photo10.jpg" alt="Mountain lake">
-
-                <div class="photo-text">
-                    <span>TRAVEL</span>
-                    <h2>Exploring Hidden Lake Circle</h2>
-                </div>
-            </div>
-
-        </section>
-
-
-        <!-- FOOTER -->
-        <footer>
-
-            <div class="footer-about">
-
-                <h2>🟨 EXPLORE</h2>
-
-                <p>
-                    A community archive of outdoor
-                    adventures, stories and photography.
-                </p>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>EXPLORE</h3>
-
-                <a href="#">Latest Stories</a>
-                <a href="#">Adventure</a>
-                <a href="#">Nature</a>
-                <a href="#">Travel</a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>INFO</h3>
-
-                <a href="#">Our Mission</a>
-                <a href="#">Community</a>
-                <a href="#">Contact</a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>FOLLOW</h3>
-
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">YouTube</a>
-
-            </div>
-
-        </footer>
-
-
-        <div class="copyright">
-            © 2026 Community Expedition Archive
         </div>
 
-    </div>
+        <div class="footer-column">
+            <h3>EXPLORE</h3>
+            <a href="#">Adventure Stories</a>
+            <a href="#">Fishing Spots</a>
+            <a href="#">Community</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>FISH GEAR</h3>
+            <a href="#">Fishing Rods</a>
+            <a href="#">Reels</a>
+            <a href="#">Outdoor Tools</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>RESOURCES</h3>
+            <a href="#">Photo Gallery</a>
+            <a href="#">Fishing Tips</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Fishcraft. All rights reserved.
+        </p>
+
+    </footer>
 
 </body>
 </html>

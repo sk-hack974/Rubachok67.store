@@ -1,443 +1,293 @@
-/* -------------------------
-   ЗАГАЛЬНІ НАЛАШТУВАННЯ
-------------------------- */
-
+/* Загальні налаштування */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-
-    background-color: #eeeeF5;
-
-    font-family: Arial, sans-serif;
-
+    background-color: #050915;
     color: white;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-
-/* -------------------------
-   ГОЛОВНИЙ КОНТЕЙНЕР
-------------------------- */
-
-.container {
-    margin: 30px auto;
-    background-color: #020914;
-}
-
-
-/* -------------------------
-   HEADER
-------------------------- */
-
-header {
-    height: 55px;
-
-    padding: 0 30px;
-
+/* Верхнє меню */
+.header {
+    background-color: #030711;
+    padding: 15px 5%;
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
-    border-bottom: 1px solid #17202e;
+    gap: 15px;
 }
-
-
-/* ЛОГО */
 
 .logo {
-    font-size: 11px;
-
-    font-weight: bold;
-}
-
-
-/* МЕНЮ */
-
-nav {
-    display: flex;
-
-    gap: 20px;
-}
-
-nav a {
-    color: #8a93a2;
-
-    text-decoration: none;
-
-    font-size: 9px;
-}
-
-nav a:hover {
     color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
+.menu {
+    display: flex;
+    gap: 18px;
+}
 
-/* КНОПКА */
+.menu a {
+    color: #a6adbb;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.menu a:hover,
+.menu .active {
+    color: #ffbd19;
+}
 
 .join-button {
-    background-color: #f4b51b;
-
-    color: #111;
-
-    border: none;
-
-    padding: 7px 12px;
-
-    font-size: 8px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-}
-
-
-/* -------------------------
-   INTRO
-------------------------- */
-
-.intro {
-    background-color: #003d32;
-
-    text-align: center;
-
-    padding: 40px 20px 30px;
-}
-
-.intro h1 {
-    margin: 0;
-
-    font-size: 22px;
-
-    letter-spacing: 1px;
-}
-
-.intro p {
-    color: #91aaa5;
-
-    font-size: 9px;
-
-    margin: 12px 0 20px;
-}
-
-
-/* КНОПКИ */
-
-.buttons {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 8px;
-
-    flex-wrap: wrap;
-}
-
-.buttons button {
-    background-color: #075448;
-
-    border: 1px solid #157365;
-
-    color: #d6e3df;
-
-    padding: 7px 12px;
-
-    font-size: 7px;
-
-    cursor: pointer;
-}
-
-.buttons button:first-child {
-    background-color: #f4b51b;
-
-    color: #111;
-
-    border-color: #f4b51b;
-}
-
-
-/* -------------------------
-   GALLERY
-------------------------- */
-
-.gallery {
-    padding: 25px 30px;
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 8px;
-}
-
-
-/* КАРТИНКА */
-
-.photo {
-    position: relative;
-
-    overflow: hidden;
-
-    background-color: #111b29;
-}
-
-
-/* маленькі фото */
-
-.photo-small {
-    height: 180px;
-}
-
-
-/* великі фото */
-
-.photo-big {
-    height: 180px;
-}
-
-
-/* сама картинка */
-
-.photo img {
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition: 0.3s;
-}
-
-
-/* ефект при наведенні */
-
-.photo:hover img {
-    transform: scale(1.05);
-}
-
-
-/* -------------------------
-   ТЕКСТ НА КАРТИНЦІ
-------------------------- */
-
-.photo-text {
-    position: absolute;
-
-    left: 10px;
-
-    bottom: 10px;
-
-    background-color: rgba(0, 0, 0, 0.65);
-
-    padding: 7px 10px;
-
-    max-width: 85%;
-}
-
-.photo-text span {
-    color: #f4b51b;
-
-    font-size: 6px;
-
-    font-weight: bold;
-}
-
-.photo-text h2 {
-    margin: 4px 0 0;
-
+    background-color: #ffbd19;
+    color: #050915;
+    padding: 8px 12px;
+    text-decoration: none;
     font-size: 10px;
-
-    line-height: 1.2;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-
-/* -------------------------
-   РОЗМІР КАРТОК
-------------------------- */
-
-/* перший ряд */
-
-.photo:nth-child(1) {
-    grid-column: span 1;
+/* Головний зелений блок */
+.hero {
+    background-color: #00382c;
+    text-align: center;
+    padding: 55px 15px;
 }
 
-.photo:nth-child(2) {
-    grid-column: span 1;
+.subtitle {
+    color: #ffbd19;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.photo:nth-child(3) {
-    grid-column: span 1;
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
 }
 
-
-/* другий ряд */
-
-.photo:nth-child(4) {
-    grid-column: span 2;
-}
-
-.photo:nth-child(5) {
-    grid-column: span 1;
-}
-
-
-/* третій ряд */
-
-.photo:nth-child(6) {
-    grid-column: span 1;
-}
-
-.photo:nth-child(7) {
-    grid-column: span 1;
-}
-
-.photo:nth-child(8) {
-    grid-column: span 1;
-}
-
-
-/* четвертий ряд */
-
-.photo:nth-child(9) {
-    grid-column: span 2;
-}
-
-.photo:nth-child(10) {
-    grid-column: span 1;
-}
-
-
-/* -------------------------
-   FOOTER
-------------------------- */
-
-footer {
-    border-top: 1px solid #182332;
-
-    padding: 30px;
-
-    display: grid;
-
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-
-    gap: 30px;
-}
-
-
-/* текст */
-
-.footer-about h2 {
+.description {
+    color: #c1d0ca;
     font-size: 12px;
-}
-
-.footer-about p {
-    color: #717b8c;
-
-    font-size: 8px;
-
+    margin-bottom: 22px;
     line-height: 1.6;
 }
 
+/* Кнопки категорій */
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
 
-/* колонки */
+.categories a {
+    background-color: #092a29;
+    border: 1px solid #31514a;
+    color: #d1d9d6;
+    text-decoration: none;
+    padding: 9px 12px;
+    font-size: 10px;
+}
+
+.categories a:hover,
+.categories .selected {
+    background-color: #ffbd19;
+    color: #050915;
+}
+
+/* Сітка фотографій */
+.gallery {
+    padding: 25px 5%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+/* Картки */
+.photo-card {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    background-color: #172128;
+    border-radius: 3px;
+}
+
+/* Широкі картки займають дві колонки */
+.photo-card.wide {
+    grid-column: span 2;
+}
+
+/* Фото заповнює картку */
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Ефект наведення */
+.photo-card:hover img {
+    transform: scale(1.06);
+}
+
+/* Темний градієнт під текстом */
+.photo-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.9)
+    );
+    pointer-events: none;
+}
+
+/* Підпис фотографії */
+.photo-info {
+    position: absolute;
+    left: 12px;
+    right: 10px;
+    bottom: 14px;
+    z-index: 1;
+}
+
+.photo-info span {
+    display: block;
+    color: #ffbd19;
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.photo-info h2 {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Нижня частина сайту */
+.footer {
+    background-color: #030711;
+    padding: 40px 5% 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.footer-about p {
+    color: #929aaa;
+    font-size: 11px;
+    line-height: 1.7;
+    margin-top: 15px;
+    max-width: 230px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .footer-column h3 {
-    color: #f4b51b;
-
-    font-size: 8px;
-
-    margin-top: 0;
+    color: #ffbd19;
+    font-size: 11px;
+    margin-bottom: 5px;
 }
 
 .footer-column a {
-    display: block;
-
-    color: #737d8d;
-
+    color: #929aaa;
     text-decoration: none;
-
-    font-size: 8px;
-
-    margin-bottom: 7px;
+    font-size: 10px;
 }
 
 .footer-column a:hover {
-    color: white;
+    color: #ffbd19;
 }
-
-
-/* -------------------------
-   COPYRIGHT
-------------------------- */
 
 .copyright {
-    border-top: 1px solid #111b28;
-
-    padding: 15px 30px;
-
-    color: #566174;
-
-    font-size: 7px;
+    grid-column: 1 / -1;
+    border-top: 1px solid #202634;
+    padding-top: 18px;
+    margin-top: 15px;
+    color: #788092;
+    font-size: 10px;
 }
 
-
-/* -------------------------
-   ТЕЛЕФОН
-------------------------- */
-
-@media (max-width: 700px) {
-
-    .container {
-        width: 95%;
-
-        margin: 10px auto;
-    }
-
-
-    header {
-        height: auto;
-
-        padding: 15px;
-
-        flex-direction: column;
-
-        gap: 15px;
-    }
-
-
-    nav {
+/* Для планшетів */
+@media (max-width: 800px) {
+    .header {
         flex-wrap: wrap;
-
-        justify-content: center;
     }
 
+    .menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 23px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .photo-card.wide {
+        grid-column: span 2;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Для телефонів */
+@media (max-width: 500px) {
+    .hero {
+        padding: 40px 12px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
 
     .gallery {
         grid-template-columns: 1fr;
-
-        padding: 15px;
+        padding: 18px 12px;
     }
 
-
-    .photo:nth-child(n) {
+    .photo-card,
+    .photo-card.wide {
         grid-column: span 1;
+        height: 220px;
     }
 
-
-    .photo {
-        height: 200px;
-    }
-
-
-    footer {
+    .footer {
         grid-template-columns: 1fr 1fr;
-
-        padding: 20px;
+        padding: 30px 18px;
     }
 
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+
+    .copyright {
+        grid-column: 1 / -1;
+    }
 }

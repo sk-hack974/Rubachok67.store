@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join Club | FISHCRAFT</title>
+
+    <!-- Підключення CSS -->
+    <link rel="stylesheet" href="join.css">
+</head>
+<body>
+
+    <!-- Верхнє меню -->
+    <header class="header">
+        <a href="join.html" class="logo">
+            <span class="logo-icon">✓</span>
+            FISHCRAFT
+        </a>
+
+        <nav class="navigation">
+            <a href="#home">Головна</a>
+            <a href="#benefits">Переваги</a>
+            <a href="#join" class="active">Join Club</a>
+        </nav>
+
+        <a href="#join" class="header-button">ПРИЄДНАТИСЯ</a>
+    </header>
+
+    <!-- Категорії -->
+    <div class="categories">
+        <span>Fishing Community</span>
+        <span>Pro Tips</span>
+        <span>Fishing Gear</span>
+        <span>Adventure</span>
+    </div>
+
+    <!-- Головний блок -->
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="label">FISHCRAFT MEMBERSHIP</span>
+
+                <h1>
+                    СТАНЬ ЧАСТИНОЮ
+                    <span>РИБОЛОВНОЇ</span>
+                    СПІЛЬНОТИ
+                </h1>
+
+                <p>
+                    Відкривай нові водойми, отримуй поради від досвідчених
+                    рибалок та знаходь однодумців разом із FISHCRAFT.
+                </p>
+
+                <a href="#join" class="main-button">
+                    ПРИЄДНАТИСЯ ДО КЛУБУ
+                </a>
+
+                <div class="hero-note">
+                    <span>●</span> Для справжніх поціновувачів риболовлі
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-overlay">
+                    <span>FISHCRAFT EXPEDITION</span>
+                    <h2>Find your next adventure.</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Переваги клубу -->
+        <section class="benefits" id="benefits">
+            <div class="section-heading">
+                <div>
+                    <span class="label">WHY JOIN US?</span>
+                    <h2>ПЕРЕВАГИ УЧАСНИКА</h2>
+                </div>
+
+                <p>Більше знань. Більше пригод. Більше риби.</p>
+            </div>
+
+            <div class="benefit-grid">
+
+                <article class="benefit-card">
+                    <div class="benefit-icon">01</div>
+                    <h3>Поради експертів</h3>
+                    <p>
+                        Дізнавайся про техніки лову, вибір снастей
+                        та секрети досвідчених рибалок.
+                    </p>
+                </article>
+
+                <article class="benefit-card">
+                    <div class="benefit-icon">02</div>
+                    <h3>Секретні локації</h3>
+                    <p>
+                        Відкривай цікаві місця для риболовлі
+                        та плануй свої наступні виїзди.
+                    </p>
+                </article>
+
+                <article class="benefit-card">
+                    <div class="benefit-icon">03</div>
+                    <h3>Свої люди</h3>
+                    <p>
+                        Знайомся з рибалками, обмінюйся досвідом
+                        та ділися власними досягненнями.
+                    </p>
+                </article>
+
+                <article class="benefit-card">
+                    <div class="benefit-icon">04</div>
+                    <h3>Новинки спорядження</h3>
+                    <p>
+                        Дізнавайся про нові снасті, корисні товари
+                        та рекомендації для наступної риболовлі.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Форма реєстрації -->
+        <section class="join-section" id="join">
+
+            <div class="join-info">
+                <span class="label">YOUR ADVENTURE STARTS HERE</span>
+
+                <h2>
+                    ГОТОВИЙ ДО
+                    <span>НОВОГО КЛЬОВУ?</span>
+                </h2>
+
+                <p>
+                    Заповни форму та зроби перший крок до спільноти
+                    FISHCRAFT. Це швидко та просто!
+                </p>
+
+                <ul>
+                    <li>✓ Корисні матеріали для рибалок</li>
+                    <li>✓ Новини та поради</li>
+                    <li>✓ Спільнота однодумців</li>
+                </ul>
+            </div>
+
+            <div class="form-card">
+                <h2>JOIN THE CLUB</h2>
+                <p class="form-subtitle">Створи свій профіль учасника</p>
+
+                <form id="joinForm">
+
+                    <label for="name">Твоє ім'я</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Наприклад, Андрій"
+                        required
+                        minlength="2"
+                    >
+
+                    <label for="email">Електронна пошта</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                    <label for="experience">Твій досвід</label>
+                    <select id="experience" name="experience" required>
+                        <option value="" disabled selected>
+                            Обери свій рівень
+                        </option>
+                        <option value="beginner">Початківець</option>
+                        <option value="intermediate">Любитель</option>
+                        <option value="advanced">Досвідчений рибалка</option>
+                    </select>
+
+                    <label for="fishing">Улюблений вид риболовлі</label>
+                    <select id="fishing" name="fishing" required>
+                        <option value="" disabled selected>
+                            Обери вид риболовлі
+                        </option>
+                        <option value="spinning">Спінінг</option>
+                        <option value="feeder">Фідер</option>
+                        <option value="float">Поплавкова</option>
+                        <option value="carp">Коропова</option>
+                        <option value="other">Інший</option>
+                    </select>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="agreement" required>
+                        <span>Я погоджуюся на обробку введених даних.</span>
+                    </label>
+
+                    <button type="submit" class="submit-button">
+                        СТАТИ УЧАСНИКОМ →
+                    </button>
+
+                    <p id="formMessage" class="form-message"></p>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Підвал сайту -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">✓</span>
+                    FISHCRAFT
+                </a>
+
+                <p>
+                    Створено для тих, хто цінує природу,
+                    якісні снасті та справжні пригоди.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>EXPLORE</h3>
+                <a href="#benefits">Переваги</a>
+                <a href="#join">Приєднатися</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>COMMUNITY</h3>
+                <a href="#join">Стати учасником</a>
+                <a href="#home">Про клуб</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 FISHCRAFT. Усі права захищені.</span>
+            <span>FISHING IS MORE THAN A HOBBY.</span>
+        </div>
+    </footer>
+
+    <!-- Підключення JavaScript -->
+    <script src="join.js"></script>
+
+</body>
+</html>

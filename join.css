@@ -1,4 +1,4 @@
-/* Налаштування всієї сторінки */
+
 * {
     margin: 0;
     padding: 0;
@@ -30,26 +30,6 @@ select {
 }
 
 /* Верхнє меню */
-.header {
-    min-height: 65px;
-    padding: 12px 4.5%;
-    background: #030712;
-    border-bottom: 1px solid #202738;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.logo {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    font-weight: 900;
-    font-size: 17px;
-    letter-spacing: -0.5px;
-}
 
 .logo-icon {
     display: inline-flex;

@@ -45,23 +45,6 @@ select {
     font-weight: bold;
 }
 
-.navigation {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-}
-
-.navigation a {
-    color: #9ca8bd;
-    font-size: 12px;
-    transition: color 0.2s;
-}
-
-.navigation a:hover,
-.navigation a.active {
-    color: #ffb000;
-}
-
 .header-button,
 .main-button,
 .submit-button {

@@ -11,6 +11,10 @@ body {
     color: white;
 }
 
+iframe {
+    width: 300px;
+    height: 300px;
+}
 
 .hero {
     padding: 55px 50px;

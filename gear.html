@@ -8,7 +8,8 @@
 
     <!-- Підключаємо CSS -->
     <link rel="stylesheet" href="gear.css">
-     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -23,8 +24,7 @@
     
 <body>
 
-   
-      <header class="hero-section">
+    <header class="hero-section">
         <nav class="navbar">
             <div class="logo">RuBaChOk67</div>
             <ul class="nav-links">
@@ -37,11 +37,30 @@
             </ul>
 
             <div class="nav-actions">
-                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
-                <a href="#" class="profile-icon"><i class="far fa-user"></i></a>
+                <!-- КОРЗИНА -->
+                <div class="cart-container">
+                    <a href="#" class="cart-icon" id="cart-toggle">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge" id="cart-count">0</span>
+                    </a>
+
+                    <!-- Випадаюче вікно корзини -->
+                    <div class="cart-dropdown" id="cart-dropdown">
+                        <h4>Кошик</h4>
+                        <div class="cart-items" id="cart-items">
+                            <p class="cart-empty-text">Кошик порожній</p>
+                        </div>
+                        <div class="cart-total">
+                            <span>Разом:</span>
+                            <span id="cart-total-price">0 ₴</span>
+                        </div>
+                        <button class="btn-checkout" id="btn-checkout" disabled>Купити</button>
+                    </div>
+                </div>
                 <a href="join.html" class="btn-join">ПРИЄДНАТИСЯ</a>
             </div>
         </nav>
+    </header>
 
 
     <!-- ГОЛОВНИЙ БЛОК -->
@@ -104,10 +123,14 @@
                 <p class="category">
                     РЮКЗАКИ
                 </p>
-
-                <p class="product-price">
-                    2 490 ₴
-                </p>
+                
+                <div class="price-buy-cont">
+                    <p class="product-price">
+                        2 490 ₴
+                    </p>
+                    
+                    <button class="btn-buy">В корзину</button>
+                </div>
 
             </div>
 
@@ -123,9 +146,13 @@
                     АКСЕСУАРИ
                 </p>
 
-                <p class="product-price">
-                    890 ₴
-                </p>
+                <div class="price-buy-cont">
+                    <p class="product-price">
+                        890 ₴
+                    </p>
+
+                    <button class="btn-buy">В корзину</button>
+                </div>
 
             </div>
 
@@ -141,9 +168,13 @@
                     ОДЯГ
                 </p>
 
-                <p class="product-price">
-                    1 190 ₴
-                </p>
+                <div class="price-buy-cont">
+                    <p class="product-price">
+                        1 190 ₴
+                    </p>
+
+                    <button class="btn-buy">В корзину</button>
+                </div>
 
             </div>
 
@@ -159,9 +190,13 @@
                     ВЗУТТЯ
                 </p>
 
-                <p class="product-price">
-                    3 290 ₴
-                </p>
+                <div class="price-buy-cont">
+                    <p class="product-price">
+                        3 290 ₴
+                    </p>
+
+                    <button class="btn-buy">В корзину</button>
+                </div>
 
             </div>
 
@@ -177,9 +212,13 @@
                     АКСЕСУАРИ
                 </p>
 
-                <p class="product-price">
-                    2 790 ₴
-                </p>
+                <div class="price-buy-cont">
+                    <p class="product-price">
+                        2 790 ₴
+                    </p>
+
+                    <button class="btn-buy">В корзину</button>
+                </div>
 
             </div>
 
@@ -195,9 +234,13 @@
                     ОДЯГ
                 </p>
 
-                <p class="product-price">
-                    3 590 ₴
-                </p>
+                <div class="price-buy-cont">
+                    <p class="product-price">
+                        3 590 ₴
+                    </p>
+
+                    <button class="btn-buy">В корзину</button>
+                </div>
 
             </div>
 
@@ -213,9 +256,13 @@
                     ТУРИЗМ
                 </p>
 
-                <p class="product-price">
-                    790 ₴
-                </p>
+                <div class="price-buy-cont">
+                    <p class="product-price">
+                        790 ₴
+                    </p>
+
+                    <button class="btn-buy">В корзину</button>
+                </div>
 
             </div>
 
@@ -231,9 +278,13 @@
                     ОДЯГ
                 </p>
 
-                <p class="product-price">
-                    690 ₴
-                </p>
+                <div class="price-buy-cont">
+                    <p class="product-price">
+                        690 ₴
+                    </p>
+
+                    <button class="btn-buy">В корзину</button>
+                </div>
 
             </div>
 
@@ -294,6 +345,112 @@
     <div class="copyright">
         © 2026 Gear-Shop. Усі права захищені.
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartToggle = document.getElementById('cart-toggle');
+            const cartDropdown = document.getElementById('cart-dropdown');
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartCountEl = document.getElementById('cart-count');
+            const cartTotalPriceEl = document.getElementById('cart-total-price');
+            const btnCheckout = document.getElementById('btn-checkout');
+            const checkoutModal = document.getElementById('checkout-modal');
+            const modalClose = document.getElementById('modal-close');
+
+            let cart = [];
+
+            // Відкриття/закриття корзини при кліку на іконку
+            cartToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                cartDropdown.classList.toggle('active');
+            });
+
+            // Закриття випадаючого вікна при кліку поза ним
+            document.addEventListener('click', (e) => {
+                if (!cartToggle.contains(e.target) && !cartDropdown.contains(e.target)) {
+                    cartDropdown.classList.remove('active');
+                }
+            });
+
+            // Обробка натискання "В корзину" на карточках товарів
+            const buyButtons = document.querySelectorAll('.btn-buy');
+            buyButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const productCard = e.target.closest('.product');
+                    const title = productCard.querySelector('h3').textContent.trim();
+                    
+                    // Очищаємо ціну від пробілів та символу ₴, перетворюємо в число
+                    const rawPrice = productCard.querySelector('.product-price').textContent;
+                    const price = parseInt(rawPrice.replace(/\s+/g, '').replace('₴', ''), 10);
+
+                    addToCart(title, price);
+                });
+            });
+
+            // Додавання товару у масив корзини
+            function addToCart(title, price) {
+                const existingItem = cart.find(item => item.title === title);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({ title, price, quantity: 1 });
+                }
+                updateCartUI();
+            }
+
+            // Видалення товару
+            window.removeFromCart = function(title) {
+                cart = cart.filter(item => item.title !== title);
+                updateCartUI();
+            };
+
+            // Оновлення UI корзини
+            function updateCartUI() {
+                // Оновлення лічильника товарів
+                const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+                cartCountEl.textContent = totalCount;
+
+                // Оновлення загальної суми
+                const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                cartTotalPriceEl.textContent = totalPrice.toLocaleString('uk-UA') + ' ₴';
+
+                // Вмикання/вимикання кнопки Оплати
+                btnCheckout.disabled = cart.length === 0;
+
+                // Рендер товарів
+                if (cart.length === 0) {
+                    cartItemsContainer.innerHTML = '<p class="cart-empty-text">Кошик порожній</p>';
+                } else {
+                    cartItemsContainer.innerHTML = cart.map(item => `
+                        <div class="cart-item">
+                            <div class="cart-item-info">
+                                <p class="cart-item-title">${item.title}</p>
+                                <p class="cart-item-price">${item.quantity} x ${item.price.toLocaleString('uk-UA')} ₴</p>
+                            </div>
+                            <button class="cart-item-remove" onclick="removeFromCart('${item.title}')">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </div>
+                    `).join('');
+                }
+            }
+
+            // Натискання на кнопку "Купити" в корзині
+            btnCheckout.addEventListener('click', () => {
+                if (cart.length > 0) {
+                    cart = [];
+                    updateCartUI();
+                    cartDropdown.classList.remove('active');
+                    checkoutModal.classList.add('active');
+                }
+            });
+
+            // Закриття модального вікна підтвердження
+            modalClose.addEventListener('click', () => {
+                checkoutModal.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>

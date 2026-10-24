@@ -4,14 +4,7 @@ a {
 }
 
 
-.hero-section {
-    position: relative;
-    min-height: 85vh;
-    background: linear-gradient(rgba(6, 11, 17, 0.4), #060b11), 
-                url('https://unsplash.com') no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-}
+
 
 
 .navbar {
